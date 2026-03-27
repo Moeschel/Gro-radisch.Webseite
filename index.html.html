@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2 Taktreffen Groß Radisch</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #f4f4f4, #e5e7eb);
+  color: #1f2937;
+}
+
+/* NAVBAR */
+header {
+  background: rgba(0,0,0,0.85);
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('hintergrund.png') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 22px;
+  color: #cbd5f5;
+}
+
+/* INFO */
+.info-box {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.7;
+  font-size: 18px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* PLAN */
+.plan {
+  display: grid;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.plan div {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.07);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  padding: 30px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);} 
+  to {opacity: 1; transform: translateY(0);} 
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 80px 15px;
+  }
+
+  .info-box {
+    font-size: 16px;
+  }
+
+  .plan {
+    font-size: 18px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  #kontakt p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .btn {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Start</a>
+    <a href="#info">Info</a>
+    <a href="#plan">Tagesplan</a>
+    <a href="#gallery">Bilder</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>2 Taktreffen Groß Radisch</h1>
+    <p>Action • Motoren • Gemeinschaft</p>
+  </div>
+</section>
+
+<!-- INFO -->
+<section id="info">
+  <h2>Informationen</h2>
+  <div class="info-box">
+    <p>
+      Willkommen zum 2 Taktreffen Groß Radisch! Am 4. Juli starten wir ab 11 Uhr in einen unvergesslichen Tag voller Action, Motoren und Gemeinschaft.
+    </p>
+    <p>
+      Euch erwarten Prüfstand, Wickelplatten, Teilemarkt und Rennstrecke – perfekt für alle Zweitakt-Fans.
+    </p>
+    <p>
+      Für Essen, Getränke und Unterhaltung ist gesorgt. Kommt vorbei und erlebt einen geilen Tag!
+    </p>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section id="plan">
+  <h2>Tagesplan</h2>
+  <div class="plan">
+    <div>11:00 – Ankunft</div>
+    <div>12:00 – Mittagessen</div>
+    <div>13:00 – Aktivitäten</div>
+    <div>15:00 – Action</div>
+    <div>18:00 – Abschluss</div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Bilder</h2>
+  <div class="gallery">
+    <img src="bild 1.png" alt="Event Bild 1">
+    <img src="bild 2.png" alt="Event Bild 2">
+    <img src="bild 3.png" alt="Event Bild 3">
+    <img src="bild 5.png" alt="Event Bild 4">
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <p>
+    📧 tommueller2510@gmail.com<br>
+    📞 015222301621<br>
+    📸 Instagram: @gr_simsontreffen
+  </p>
+
+  <a class="btn" href="https://www.instagram.com/gr_simsontreffen?igsh=bzVrY3h6dDk3enFn" target="_blank">
+    Instagram öffnen
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 2 Taktreffen Groß Radisch</p>
+</footer>
+
+</body>
+</html>
